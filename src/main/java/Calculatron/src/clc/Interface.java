@@ -1,4 +1,4 @@
-package clc;
+package Calculatron.src.clc;
 
 import java.util.Scanner;
 

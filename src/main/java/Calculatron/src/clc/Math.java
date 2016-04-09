@@ -1,4 +1,4 @@
-package clc;
+package Calculatron.src.clc;
 
 public class Math {
 	

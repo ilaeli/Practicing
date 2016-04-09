@@ -1,4 +1,4 @@
-package mme;
+package Calculatron.src.clc;
 
 import javax.swing.*;
 import java.awt.*;
@@ -46,8 +46,8 @@ public class Frame extends JFrame {
 private class ButtonListener implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		
-		System.out.println("generate " + WordGen.createPhrase());
-		textArea.append(WordGen.createPhrase() + "\n");
+		System.out.println("generate " + Math.add(getX(), getY()));
+		textArea.append(Math.add(getX(), getY()) + "\n");
 		
 		}
 	}

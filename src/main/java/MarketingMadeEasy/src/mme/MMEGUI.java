@@ -1,4 +1,4 @@
-package mme;
+package MarketingMadeEasy.src.mme;
 
 import javax.swing.SwingUtilities;
 

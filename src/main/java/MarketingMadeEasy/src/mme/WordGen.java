@@ -1,4 +1,4 @@
-package mme;
+package MarketingMadeEasy.src.mme;
 
 public class WordGen {
 	public static String createPhrase(){

@@ -1,4 +1,4 @@
-package game;
+package Game.src.game;
 
 public class Opponent {
 	
