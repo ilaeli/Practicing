@@ -1,8 +1,8 @@
 # Practicing
 
-Various practice projects to learn through.
+Various practice projects to enhance my skills.
 
-Calculatron is a basic calculator with an console interface to do basic arithmetic.
+Calculatron is a basic calculator with a console interface to do basic arithmetic.
 
 Game is a Pokemon style turn based combat system that I'm trying to fine tune the interactions between classes.
 
