@@ -2,23 +2,23 @@ package Game.src.game;
 
 public class Player {
 	
-	public int hp = 10;
-	public int def = 0;
-	public int atk = 2;
-	public int exp = 0;
-	public int defInc = 1;
+	private int hp = 10;
+	private int def = 0;
+	private int atk = 2;
+	private int exp = 0;
+	private int defInc = 1;
 	
 	public void reduceHealthPlayer(int attackValue){
 		if (attackValue <= def){
 			System.out.println("The Raccoon is no longer effective!");
 		}
 		else{
-			this.hp = this.hp - attackValue + this.def;
+			this.setHp(this.getHp() - attackValue + this.def);
 		}
 	}
 	
 	public int getAttackValuePlayer(){
-	    return this.atk;
+	    return this.getAtk();
 	}
 	
 	public void increaseDefensePlayer(int defValue){
@@ -35,5 +35,21 @@ public class Player {
 	
 	public int getExpValuePlayer(){
 		return this.exp;
+	}
+
+	public int getAtk() {
+		return atk;
+	}
+
+	public void setAtk(int atk) {
+		this.atk = atk;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
 	}
 }

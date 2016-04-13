@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Beginning {
 	
-	//Version 1.2
+	//Version 1.3
 
     public static void main(String[] args)
     {	
