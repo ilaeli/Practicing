@@ -2,25 +2,25 @@ package Game.src.game;
 
 public class Player {
 	
-	public final int hp = 10;
-	public final int def = 0;
-	public final int atk = 2;
-	public final int exp = 0;
-	/*public int hp(int i) {		
-		int hp = 2;
-		return hp;
+	public int hp = 10;
+	public int def = 0;
+	public int atk = 2;
+	public int exp = 0;
+	public int defInc = 1;
+	
+	public void reduceHealth(int attackValue){
+	    this.hp = this.hp - attackValue;
 	}
-	public int def(int i) {		
-		int def = 2;
-		return def;
+	
+	public int getAttackValue(){
+	    return this.atk - this.def;
 	}
-	public int atk(int i) {		
-		int atk = 2;
-		return atk;
+	
+	public void increaseDefense(int defValue){
+		this.def = this.def + defValue;
 	}
-	public int exp(int i) {		
-		int exp = 0;
-		return exp;
-	} 
-	*/
+	
+	public int getDefValue(){
+		return this.defInc;
+	}
 }

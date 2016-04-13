@@ -1,22 +1,15 @@
 package Game.src.game;
 
-public class Opponent {
+public class Opponent {	
+	public int hp = 5;
+	public int def = 0;
+	public int atk = 2;
 	
-	public final int hp = 5;
-	public final int def = 0;
-	public final int atk = 1;
-
-	/*public int hp(int i) {
-		int hp = 5;
-		return hp;
+	public void reduceHealth(int attackValue){
+	    this.hp = this.hp - attackValue;
 	}
-	public int def(int i) {
-		int def = 0;
-		return def;
+	
+	public int getAttackValue(){
+	    return this.atk - this.def;
 	}
-	public int atk(int i) {
-		int atk = 1;
-		return atk;
-	}
-	*/
 }
