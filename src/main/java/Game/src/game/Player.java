@@ -8,19 +8,32 @@ public class Player {
 	public int exp = 0;
 	public int defInc = 1;
 	
-	public void reduceHealth(int attackValue){
-	    this.hp = this.hp - attackValue;
+	public void reduceHealthPlayer(int attackValue){
+		if (attackValue <= def){
+			System.out.println("The Raccoon is no longer effective!");
+		}
+		else{
+			this.hp = this.hp - attackValue + this.def;
+		}
 	}
 	
-	public int getAttackValue(){
-	    return this.atk - this.def;
+	public int getAttackValuePlayer(){
+	    return this.atk;
 	}
 	
-	public void increaseDefense(int defValue){
+	public void increaseDefensePlayer(int defValue){
 		this.def = this.def + defValue;
 	}
 	
-	public int getDefValue(){
+	public int getDefValuePlayer(){
 		return this.defInc;
+	}
+	
+	public void increaseExpPlayer(int expValue){
+		this.exp = this.exp + expValue;
+	}
+	
+	public int getExpValuePlayer(){
+		return this.exp;
 	}
 }

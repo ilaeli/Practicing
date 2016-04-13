@@ -5,11 +5,11 @@ public class Opponent {
 	public int def = 0;
 	public int atk = 2;
 	
-	public void reduceHealth(int attackValue){
+	public void reduceHealthOpponent(int attackValue){
 	    this.hp = this.hp - attackValue;
 	}
 	
-	public int getAttackValue(){
-	    return this.atk - this.def;
-	}
+	public int getAttackValueOpponent(){
+	    return this.atk;
+	}	
 }
